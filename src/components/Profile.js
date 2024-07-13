@@ -23,7 +23,7 @@ const Profile = () => {
                 {error ? (
                     <h1>{error}</h1>
                 ) : !userData ? (
-                    <h1>Search</h1>
+                    <h1></h1>
                 ) : (
                     <div className='display_user_container'>
                         <div className='user_data_container'>
