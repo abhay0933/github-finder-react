@@ -1,38 +1,187 @@
+body {
+    background-color: #0a0a0a;
+    color: whitesmoke;
+}
+
 .App {
-  text-align: center;
+    padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-container {
+    /* width: 100%; */
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(104, 196, 202, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 5px;
+    /* border: 1px solid white; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo svg {
+    color: white;
+    font-size: 40px;
+}
+
+/* .profile-container {
+    border: 1px solid wheat;
+} */
+
+.searchBox-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    margin-top: 25px ;
+    /* border-bottom: 1px solid white; */
+}
+
+.searchBox-container input, button {
+    padding: 10px;
+   color: white;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.input-btn {
+    border-bottom: 2px solid rgb(76, 209, 209);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+::placeholder {
+    color: rgb(250, 248, 248);
+    opacity: 1; /* Firefox */
   }
+
+button svg {
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.display_user_container {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: "Nunito", sans-serif; */
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+  
+  .user_data_container {
+    padding: 10px;
+    display: flex;
+    position: relative;
+    /* gap: 20px; */
+    box-shadow: rgba(108, 216, 211, 0.35) 0px 5px 15px;
+    border-radius: 10px;   
+    border-radius: 4% 96% 4% 96% / 100% 0% 100% 0%;
 }
+
+.close-icon {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    cursor: pointer; 
+    font-size: 24px; 
+    color: #f7f4f4;
+    z-index: 10;
+}
+
+
+  .user_data_container h1 {
+    font-size: 20px;
+  }
+  
+  .image_container {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .image_container img {
+    height: 95%;
+    width: 70%;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+  }
+  
+  .data_container {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    padding: 5px;
+    position: relative;
+  }
+  
+  .inner_data_container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .inner_data_container h3 {
+    /* border: 2px solid rgb(8, 86, 226); */
+    /* font-size: 0.8rem; */
+    letter-spacing: 2px;
+    background-color: #1f1d1d;
+    display: flex;
+    align-items: center;
+    color: rgb(8, 86, 226);
+  }
+
+  .visit-profile {
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+
+  .visit-profile:hover {
+    background-color: aqua;
+    color: #0a0a0a;
+    font-weight: bold;
+  }
+  
+  .box {
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    background-color: #1f1d1d;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  
+  .span_tag {
+    background-color: #08aeea;
+    background-image: linear-gradient(to right, #08aeea 0%, #2af598 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .user_data {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #ff3cac;
+    background-image: linear-gradient(
+      to right,
+      #ff3cac 0%,
+      #784ba0 50%,
+      #2b86c5 100%
+    );
+  }
+  
