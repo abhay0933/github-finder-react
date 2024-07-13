@@ -23,6 +23,6 @@ https://github-finder-react-three-olive.vercel.app/
 - React
 - GitHub API
 - Axios (for API requests)
-- react-router-dom
+- Context API
 
 
